@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Quiz Challenger!</title>
+  <link rel="stylesheet" href="styles.css">
+  <!-- Header Section -->
+<header>
+  <div class="header-container">
+    <img src="logo.png" alt="Quiz Game Logo" class="logo">
+    <h1>Quiz Challenger!</h1>
+    <h2>Test your knowledge with some crazy questions!</h2>
+  </div>
+</header>
+</head>
+
+<body>
+  <div class="quiz-container">
+    <h1>Quiz Challenger!</h1>
+    
+    <!-- Question Box -->
+    <div id="question-box">
+      <div id="icon-container">
+        <img id="question-icon" src="question-icon.png" alt="Question Icon" />
+      </div>
+      <p id="question">Question will appear here...</p>
+    </div>
+
+  
+    <div id="answer-box">
+      <form id="quiz-form">
+        <!-- Options with radio buttons -->
+        <div class="option">
+          <input type="radio" id="option0" name="answer" value="0">
+          <label id="option-text-0" for="option0"></label>
+        </div>
+        <div class="option">
+          <input type="radio" id="option1" name="answer" value="1">
+          <label id="option-text-1" for="option1"></label>
+        </div>
+        <div class="option">
+          <input type="radio" id="option2" name="answer" value="2">
+          <label id="option-text-2" for="option2"></label>
+        </div>
+        <div class="option">
+          <input type="radio" id="option3" name="answer" value="3">
+          <label id="option-text-3" for="option3"></label>
+        </div>
+      </form>
+    
+      <!-- Buttons -->
+      <div class="button-container">
+        <button type="button" id="back-btn">Back</button>
+        <button type="button" id="next-btn">Next</button>
+      </div>
+      <!-- Below the Next Question Button -->
+      <div id="timer"></div>
+
+    </div>
+    
+    
+    <!-- Feedback Message -->
+    <div id="feedback-box">
+      <p id="answer-feedback"></p>
+    </div>
+    
+    <!-- Score Box -->
+    <div id="score">Score: 0</div>
+
+  </div>
+  <div id="answer-box"></div>
+  <div>
+  <button id="restart-btn"></button>
+  </div>
+
+  <script src="script.js"></script>
+  <!-- Footer Section -->
+<footer>
+  <div class="footer-container">
+    <p>&copy; 2024 Quiz Game. All rights reserved.</p>
+    <div class="social-icons">
+      <a href="#" class="social-icon">Facebook</a>
+      <a href="#" class="social-icon">Twitter</a>
+      <a href="#" class="social-icon">Instagram</a>
+    </div>
+  </div>
+</footer>
+</body>
+</html>

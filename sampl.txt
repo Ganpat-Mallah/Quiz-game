@@ -1,0 +1,50 @@
+let currentQuestionIndex = 0;
+let score = 0;
+let timerInterval;
+let selectedAnswers = []; // Array to store selected answers for each question
+
+// DOM Elements
+const questionEl = document.getElementById("question");
+const optionsEl = document.querySelectorAll(".option label");
+const optionContainers = document.querySelectorAll(".option");
+const nextBtn = document.getElementById("next-btn");
+const backBtn = document.getElementById("back-btn");
+const scoreEl = document.getElementById("score");
+const answerFeedbackEl = document.getElementById("answer-feedback");
+const timerEl = document.getElementById("timer");
+
+function loadQuestion() {
+  const currentQuestion = questions[currentQuestionIndex];
+  
+  // Update the question text
+  questionEl.textContent = currentQuestion.question;
+
+  // Add image if available
+  if (currentQuestion.image) {
+    const img = document.createElement("img");
+    img.src = currentQuestion.image;
+    img.style.width = "70%"; // Adjust size as needed
+    questionEl.appendChild(img);
+  }
+
+  // Load options into labels
+  currentQuestion.options.forEach((option, index) => {
+    optionsEl[index].textContent = option;
+    optionContainers[index].classList.remove("selected", "wrong");
+    
+    // Check if an option was previously selected
+    if (selectedAnswers[currentQuestionIndex] === index) {
+      // If it was, mark it as selected
+      optionContainers[index].classList.add("selected");
+      document.getElementById(`option${index}`).checked = true;
+    } else {
+      // Reset radio buttons if not selected
+      document.getElementById(`option${index}`).checked = false;
+    }
+  });
+
+  // Reset feedback and timer
+  answerFeedbackEl.textContent = "";
+  timerEl.textContent = ""; // Hide the timer initially
+  clearInterval(timerInterval); // Clear any running timer
+}
