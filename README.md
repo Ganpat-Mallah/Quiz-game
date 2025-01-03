@@ -23,7 +23,7 @@ CSS: Styling and responsive design.
 JavaScript: Core functionality and game logic.
 
 Try It Live 🌐
-Play the game live at: GitHub Pages Link ([Update this link after enabling GitHub Pages](https://ganpat-mallah.github.io/Quiz-game/)).
+Play the game live at: GitHub Pages Link ([Click Here](https://ganpat-mallah.github.io/Quiz-game/)).
 
 Contribute 🤝
 We welcome contributions! Feel free to fork the repository, make improvements, and submit a pull request.
