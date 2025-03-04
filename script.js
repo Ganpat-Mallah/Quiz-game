@@ -1,5 +1,16 @@
 const questions = [
   {
+    question: "Which translator translates one line at a time? ",
+    options: ["(A)Interpreter", "(B) Translator", "(C) Simulator", "(D) None of these"],
+    correct: 2,
+  },
+    {
+    question: "Which of the following is a way to represent an algorithm? ",
+    options: ["(A) Pseudocode", "(B) flowchart", "(C) None of these", "(D) Both (A) & (B)"],
+    correct: 3,
+  },
+  
+  {
     question: "Yeh kiska image hai?",
     image: "tajmahal.png", // Image path
     options: ["Taj Mahal", "Qutub Minar", "Eiffel Tower", "Great Wall of China"],
