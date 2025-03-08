@@ -1,5 +1,155 @@
 const questions = [
+
+    [
   {
+    "question": "Which function is used to open a file in Python?",
+    "options": ["(A) open()", "(B) file()", "(C) fopen()", "(D) openfile()"],
+    "correct": 0
+  },
+  {
+    "question": "Which data type is not a sequence type?",
+    "options": ["(A) list", "(B) tuple", "(C) dictionary", "(D) string"],
+    "correct": 2
+  },
+  {
+    "question": "How is a single-line comment written in Python?",
+    "options": ["(A) //", "(B) #", "(C) /* */", "(D) <!-- -->"],
+    "correct": 1
+  },
+  {
+    "question": "Which keyword is used to return a value from a function?",
+    "options": ["(A) return", "(B) yield", "(C) output", "(D) give"],
+    "correct": 0
+  },
+  {
+    "question": "Which method is used to add an element to a list in Python?",
+    "options": ["(A) append()", "(B) add()", "(C) insert()", "(D) extend()"],
+    "correct": 0
+  },
+  {
+    "question": "Which operator checks for membership?",
+    "options": ["(A) in", "(B) is", "(C) == ", "(D) !="],
+    "correct": 0
+  },
+  {
+    "question": "Which loop in Python is an entry-controlled loop?",
+    "options": ["(A) for", "(B) while", "(C) do-while", "(D) Both A and B"],
+    "correct": 3
+  },
+  {
+    "question": "Which keyword is used to immediately terminate a loop?",
+    "options": ["(A) continue", "(B) break", "(C) pass", "(D) exit"],
+    "correct": 1
+  },
+  {
+    "question": "Which method is used to get all keys from a dictionary?",
+    "options": ["(A) keys()", "(B) getkeys()", "(C) allkeys()", "(D) get_all_keys()"],
+    "correct": 0
+  },
+  {
+    "question": "Which function returns the length of a string?",
+    "options": ["(A) length()", "(B) len()", "(C) size()", "(D) count()"],
+    "correct": 1
+  },
+  {
+    "question": "What is the purpose of the '==' operator in Python?",
+    "options": ["(A) Assignment", "(B) Comparison", "(C) Logical AND", "(D) Logical OR"],
+    "correct": 1
+  },
+  {
+    "question": "Which function is used to sort a list?",
+    "options": ["(A) sort()", "(B) order()", "(C) arrange()", "(D) sorted()"],
+    "correct": 0
+  },
+  {
+    "question": "What is a tuple in Python?",
+    "options": ["(A) Mutable list", "(B) Immutable list", "(C) Mutable set", "(D) Immutable set"],
+    "correct": 1
+  },
+  {
+    "question": "Which keyword is used to define a new class?",
+    "options": ["(A) function", "(B) class", "(C) def", "(D) struct"],
+    "correct": 1
+  },
+  {
+    "question": "Which keyword is used to define a function in Python?",
+    "options": ["(A) function", "(B) def", "(C) define", "(D) func"],
+    "correct": 1
+  },
+  {
+    "question": "Which module is used to generate random numbers?",
+    "options": ["(A) math", "(B) random", "(C) numbers", "(D) randint"],
+    "correct": 1
+  },
+  {
+    "question": "Which mode is used to write into a file in Python?",
+    "options": ["(A) 'r'", "(B) 'w'", "(C) 'a'", "(D) 'r+'"],
+    "correct": 1
+  },
+  {
+    "question": "Which function is used to take input from the user?",
+    "options": ["(A) input()", "(B) get()", "(C) scan()", "(D) read()"],
+    "correct": 0
+  },
+  {
+    "question": "Which method removes the last element from a list?",
+    "options": ["(A) remove()", "(B) delete()", "(C) pop()", "(D) discard()"],
+    "correct": 2
+  },
+  {
+    "question": "Which keyword is used to define an empty code block?",
+    "options": ["(A) pass", "(B) skip", "(C) empty", "(D) null"],
+    "correct": 0
+  },
+  {
+    "question": "What is the use of the '//' operator in Python?",
+    "options": ["(A) Addition", "(B) Subtraction", "(C) Multiplication", "(D) Floor division"],
+    "correct": 3
+  },
+  {
+    "question": "Which function converts a string to lowercase?",
+    "options": ["(A) lower()", "(B) downcase()", "(C) tolower()", "(D) lowercase()"],
+    "correct": 0
+  },
+  {
+    "question": "What is a set in Python?",
+    "options": ["(A) Ordered collection", "(B) Collection of unique elements", "(C) Collection of duplicate elements", "(D) Key-value pair collection"],
+    "correct": 1
+  },
+  {
+    "question": "Which keyword is used to define a new function?",
+    "options": ["(A) def", "(B) function", "(C) define", "(D) fun"],
+    "correct": 0
+  },
+  {
+    "question": "What is the purpose of the 'and' operator in Python?",
+    "options": ["(A) Bitwise AND", "(B) Logical AND", "(C) Arithmetic AND", "(D) None of these"],
+    "correct": 1
+  },
+  {
+    "question": "Which function is used to close a file in Python?",
+    "options": ["(A) close()", "(B) end()", "(C) terminate()", "(D) stop()"],
+    "correct": 0
+  },
+  {
+    "question": "What is the purpose of the 'is' operator in Python?",
+    "options": ["(A) Identity comparison", "(B) Equality check", "(C) Assignment", "(D) Logical NOT"],
+    "correct": 0
+  },
+  {
+    "question": "Which function is used to count the number of characters in a string?",
+    "options": ["(A) count()", "(B) len()", "(C) size()", "(D) strlen()"],
+    "correct": 1
+  },
+  {
+    "question": "Which data type is not a sequence type in Python?",
+    "options": ["(A) List", "(B) Tuple", "(C) Dictionary", "(D) String"],
+    "correct": 2
+  }
+
+
+  
+  /*{
     question: "Which translator translates one line at a time? ",
     options: ["(A)Interpreter", "(B) Translator", "(C) Simulator", "(D) None of these"],
     correct: 2,
@@ -32,7 +182,7 @@ const questions = [
     question: "Rainbow mein kitne colors hote hain?",
     options: ["5", "6", "7", "8"],
     correct: 2,
-  },
+  },*/
 ];
 
 let currentQuestionIndex = 0;
