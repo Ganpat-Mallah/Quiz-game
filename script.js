@@ -1,6 +1,6 @@
 const questions = [
 
-    [
+    
   {
     "question": "Which function is used to open a file in Python?",
     "options": ["(A) open()", "(B) file()", "(C) fopen()", "(D) openfile()"],
